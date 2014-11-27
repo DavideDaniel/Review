@@ -12,7 +12,7 @@ function removeEvens(x) {
             y.push(x[i]);
         }
     }
-    console.log(y); // console.log needs to be in the same scope as the variable - putting it here returns 1 array filled variables
+    console.log(y); // console.log needs to be in the same scope as the variable - putting it here returns 1 array filled with odd numbers
 }
 
 b;
