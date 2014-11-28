@@ -36,20 +36,44 @@ console.log(mergeArray(fun, work));
 
 
 
+// var k = [1,2,3,4,5];
+// var l = [11,22,33,44,55, 66];
+// //alternating but can't do different lengths...
+// function mergeArrayAlt(x, y) {
+// 	var c = [];
+	
+// 	if (x.length<y.length) { z = y.length}
+// 		else { z = x.length}
+// 	for (var i = 0; i < z; i++) {
+		
+// 		c.push(x[i]) && c.push(y[i])
+	
+// 	}
+// 		console.log(c);
+// };
+
+// mergeArrayAlt(k,l);
+
+
 var k = [1,2,3,4,5];
-var l = [11,22,33,44,55];
-//alternating!
+var l = [11,22,33,44,55,66,77,88,99];
+//alternating and CAN do different lengths!!!
 function mergeArrayAlt(x, y) {
-	var c = [];
+	var temp = [];
+	var finalArray = [];
 	
 	if (x.length<y.length) { z = y.length}
 		else { z = x.length}
-	for (var i = 0; i < z; i++) {
+	for (var i = 0; i <= z; i++) {
 		
-		(c.push(x[i]) && c.push(y[i]))
+		(temp.push(x[i]) && temp.push(y[i]))
 	
 	}
-		console.log(c);
+	for (var i = 0; i <= temp.length; i++) {
+		temp[i] && finalArray.push(temp[i]);
+	};
+
+		console.log(finalArray);
 };
 
 mergeArrayAlt(k,l);
